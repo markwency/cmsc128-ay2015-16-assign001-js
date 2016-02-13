@@ -1,0 +1,71 @@
+/*
+Name: Mark Wency P. Yambao
+Student Number: 2012-76554
+Section: CMSC 128 AB-7L
+*/
+
+<html>
+	<head>
+		<script src="functions.js"></script>
+	</head>
+
+<body>
+<form>
+	<h2>1.) Number to Words</h2>
+	<p>Enter number:
+	<input name="num1"  maxlength="7" size=15>
+	<p>
+		Click this button to convert number to words:
+		<input name="convert1" value="Convert" type=button onClick=numToWords(this.form)>
+	<p>
+	Converted number is:
+	<input name="word1" readonly size=100>
+</form>
+
+<form>
+	<h2>2.) Words to Number</h2>
+	<p>Enter words:
+	<input name="word2"  maxlength="200" size=100>
+	<p>
+		Click this button to convert words to number:
+		<input name="convert2" value="Convert" type=button onClick=wordsToNum(this.form)>
+	<p>
+	Converted words are:
+	<input name="num2" readonly size=15>
+</form>
+
+<form>
+	<h2>3.) Words to Currency</h2>
+	<p>Enter words:
+	<input name="word3"  maxlength="200" size=100>
+		<select name="curr">
+		  <option value="JPY">JPY</option>
+		  <option value="PHP">PHP</option>
+		  <option value="USD">USD</option>
+		</select>
+	<p>
+		Click this button to convert:
+		<input name="convert3" value="Convert" type=button onClick=wordsToCurrency(this.form)>
+	<p>
+	Converted words are:
+	<input name="currency" readonly size=15>
+</form>
+
+<form>
+	<h2>4.) Number Delimeter</h2>
+	<p>Enter number:
+	<input name="num4"  maxlength="7" size=15>
+	<p>Enter delimeter:
+	<input name="delimiter"  maxlength="1" size=15>
+	<p>Enter number of jumps:
+	<input name="jump"  maxlength="1" size=15>
+	<p>
+		Click this button to convert:
+		<input name="convert4" value="Convert" type=button onClick=numberDelimited(this.form)>
+	<p>
+	Converted words are:
+	<input name="delimited" readonly size=15>
+</form>
+
+</body>
+</html>
